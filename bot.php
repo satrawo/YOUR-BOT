@@ -4,7 +4,7 @@ echo "I am a bot";
 $challenge = $_REQUEST['hub_challenge'];
 $verify_token = $_REQUEST['hub_verify_token'];
 
-if ($verify_token === 'my_voice_is_my_password_verfiy_me') {
+if ($verify_token === 'abc123') {
   echo $challenge;
 }
 
