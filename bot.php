@@ -16,7 +16,7 @@ $message_to_reply = '';
 
 /* Recieve the message */
 if(preg_match('[time|current time|now]', strtolower($message))) {
-	$message_to_reply = time();//date(D M d h:i:s);
+	$message_to_reply = date(D M d);
 
 } 
 else {
