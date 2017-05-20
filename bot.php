@@ -16,7 +16,11 @@ $message_to_reply = '';
 
 /* Recieve the message */
 if(preg_match('[time|current time|now]', strtolower($message))) {
-	$message_to_reply = date(D M d);
+	
+	date_default_timezone_set("Asia/Bangkok");
+	$date = date('m/d/Y h:i:s a', time());
+
+	$message_to_reply = $date;
 
 } 
 else {
