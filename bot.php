@@ -32,6 +32,10 @@ $url = 'https://graph.facebook.com/v2.6/me/messages?access_token='.$access_token
 $ch = curl_init($url);
 //The JSON data.
 $jsonData = '{
+	"setting_type":"greeting",
+  	"greeting":{
+    	"text":"Hi {{user_first_name}}, welcome to this bot."
+  	}
     "recipient":{
         "id":"'.$sender.'"
     },
