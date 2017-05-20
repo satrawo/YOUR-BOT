@@ -16,7 +16,7 @@ $message_to_reply = '';
 /**
  * Some Basic rules to validate incoming messages
  */
-if (! isset($messages))  {
+if (isset($messages))  {
     $result = $messages;
     $message_to_reply = $result;
     }
