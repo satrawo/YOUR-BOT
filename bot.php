@@ -20,6 +20,8 @@ if (! isset($messages))  {
     $result = $messages;
     $message_to_reply = $result;
     }
+else 
+    $message_to_reply = 'Huh! what do you mean?';
 
 //API Url
 $url = 'https://graph.facebook.com/v2.6/me/messages?access_token='.$access_token;
